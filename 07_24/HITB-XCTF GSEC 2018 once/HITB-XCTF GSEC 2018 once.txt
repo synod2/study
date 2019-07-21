@@ -1,0 +1,3 @@
+HITB-XCTF GSEC 2018 once
+#heap-exploit,#one-shot gadget
+HITB{this_is_the_xxxxxxx_flag}

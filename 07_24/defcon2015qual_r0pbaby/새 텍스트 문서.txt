@@ -1,0 +1,3 @@
+defcon2015qual_r0pbaby
+#rop
+The flag is: W3lcome TO THE BIG L3agu3s kiddo, wasn't your first?

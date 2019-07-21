@@ -1,0 +1,3 @@
+TJCTF 2016 onshot
+#64bit rop,#one-shot gadget
+tjctf{m4gic_And_m0re_Mag1cK}

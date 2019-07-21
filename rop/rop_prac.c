@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-// gcc -mpreferred-stack-boundary=2 -m32 -fno-stack-protector rop_prac.c -o rop_prac
+// gcc -mpreferred-stack-boundary=2 -m32 -static -fno-stack-protector rop_prac.c -o rop_prac
 
 char param[16];
 
