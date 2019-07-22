@@ -6,10 +6,37 @@ r0pbaby ㅇ
 
 #aeiou
 
-passcode
+passcode ㅇ 
 got-overwrite1
 got-overwrite2
 got-shell
 secure_secret
 
 #once
+
+
+[서트 노시은] [오후 3:55] nc접속 설정
+/etc/services
+/etc/xineted
+service bitcoin
+{
+        disable         = no
+        type            = UNLISTED
+        wait            = no
+        server          = /home/bitcoin/bitcoin
+        socket_type     = stream
+        protocol        = tcp
+        user            = bitcoin
+        port            = 20005
+        flags           = REUSE
+        per_source      = 5
+}
+service xinetd restart
+
+
+대회 권한설정
+디렉토리 권한 750
+바이너리 권한 550
+c파일 권한 740
+flag 권한 440
+/tmp폴더 권한 막기
