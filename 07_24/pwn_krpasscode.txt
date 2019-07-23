@@ -7,8 +7,8 @@ r0pbaby ㅇ
 #aeiou
 
 passcode ㅇ 
-got-overwrite1
-got-overwrite2
+got-overwrite1 ㅇ
+got-overwrite2 x 
 got-shell
 secure_secret
 
