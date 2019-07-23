@@ -8,8 +8,8 @@ r0pbaby ㅇ
 
 passcode ㅇ 
 got-overwrite1 ㅇ
-got-overwrite2 x 
-got-shell
+got-overwrite2 ㅇ
+got-shell ㅇ 
 secure_secret
 
 #once
