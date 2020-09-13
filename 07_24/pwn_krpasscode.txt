@@ -14,6 +14,8 @@ secure_secret
 
 #once
 
+slevel 0,1
+hackctf rop
 
 [서트 노시은] [오후 3:55] nc접속 설정
 /etc/services

