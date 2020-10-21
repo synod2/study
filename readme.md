@@ -33,7 +33,7 @@
 
 main함수의 ret를 덮어씌우는 기초적인 방식. 
 
-**rtl_chain - RTL chaining 실습 **
+**rtl_chain - RTL chaining 실습**
 
 시스템 함수의 주소는 주어지지만 인자를 전달할 방법은 주어지지 않음. 
 
